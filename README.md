@@ -31,10 +31,10 @@ sin($\theta$) & cos($\theta$) \\
 \end{bmatrix}
 
 ![rotated image](ans/rotate.png)
-# 3. Sobel Filter Operation:
-## Concept: Convolution
+## 3. Sobel Filter Operation:
+### Concept: Convolution
 **Explanation**: The sobel_filter operation applies a convolution operation to the image using a specific filter. Convolution involves element-wise multiplication of the filter and the image, followed by summing the results. This operation is a linear transformation in linear algebra. The sobel_filter operation utilizes a 3x3 filter matrix to detect edges in the image.
-### matrix:
+#### matrix:
 \begin{bmatrix}
 -1 & -2 & -1 \\
 0 & 0 & 0 \\
@@ -42,10 +42,10 @@ sin($\theta$) & cos($\theta$) \\
 \end{bmatrix}
 
 ![sobel filter](ans/sobel.png)
-# 4. Prewitt Filter Operation:
-## Concept: Convolution
+## 4. Prewitt Filter Operation:
+### Concept: Convolution
 **Explanation**: The prewitt_filter operation also applies a convolution operation to the image using a specific filter. Similar to the sobel_filter operation, it involves element-wise multiplication of the filter and the image, followed by summing the results. This operation is a linear transformation in linear algebra. The prewitt_filter operation utilizes a 3x3 filter matrix to detect edges in the image.
-### matrix:
+#### matrix:
 \begin{bmatrix}
 -1 & 0 & 1 \\
 -1 & 0 & 1 \\
@@ -53,10 +53,10 @@ sin($\theta$) & cos($\theta$) \\
 \end{bmatrix}
 
 ![prewitt](ans/prewitt.png)
-# 5. Sharpen Filter Operation:
-## Concept: Convolution
+## 5. Sharpen Filter Operation:
+### Concept: Convolution
 **Explanation**: The sharpen_filter operation applies a convolution operation to the image using a specific filter. It involves element-wise multiplication of the filter and the image, followed by summing the results. This operation is a linear transformation in linear algebra. The sharpen_filter operation utilizes a 3x3 filter matrix to enhance the sharpness of the image.
-### matrix:
+#### matrix:
 \begin{bmatrix}
 0 & -1 & 0 \\
 -1 & -5 & -1 \\
@@ -64,10 +64,10 @@ sin($\theta$) & cos($\theta$) \\
 \end{bmatrix}
 
 ![sharpen](ans/sharpen.png)
-# 6. Blur Filter Operation:
-## Concept: Convolution
+## 6. Blur Filter Operation:
+### Concept: Convolution
 **Explanation**: The blur_filter operation applies a convolution operation to the image using an averaging filter. Similar to the previous operations, it involves element-wise multiplication of the filter and the image, followed by summing the results. This operation is a linear transformation in linear algebra. The blur_filter operation utilizes a 5x5 averaging filter matrix to blur the image.
-### matrix:
+#### matrix:
 \begin{bmatrix}
 \frac{1}{25} & \frac{1}{25} & \frac{1}{25} & \frac{1}{25} & \frac{1}{25} \\
 \frac{1}{25} & \frac{1}{25} & \frac{1}{25} & \frac{1}{25} & \frac{1}{25} \\
@@ -77,10 +77,10 @@ sin($\theta$) & cos($\theta$) \\
 \end{bmatrix}
 
 ![blur](ans/blur.png)
-# 7. Invert Color Operation:
-## Concept: Linear Transformation
+## 7. Invert Color Operation:
+### Concept: Linear Transformation
 **Explanation**: The invert_color operation applies a linear transformation to each pixel of the image. It subtracts the pixel value from 255 to invert the color. This operation is a linear transformation in linear algebra.
-### metrix: Please note that these are not matrices in the linear algebra sense, but rather operations applied to each pixel in the image.
+#### metrix: Please note that these are not matrices in the linear algebra sense, but rather operations applied to each pixel in the image.
 ```
 R' = 255 - R
 G' = 255 - G
@@ -88,19 +88,19 @@ B' = 255 - B
 ```
 
 ![invert color](ans/invert.png)
-# 8. Luminosity Operation:
-## Concept: Linear Transformation
+## 8. Luminosity Operation:
+### Concept: Linear Transformation
 **Explanation**: The luminosity operation applies a linear transformation to each pixel of the image. It calculates the luminosity value of each pixel using a weighted sum of the RGB values. This operation is a linear transformation in linear algebra.
-### matrix:
+#### matrix:
 \begin{bmatrix}
 0.2989 & 0.5870 & 0.1140 \\
 \end{bmatrix}
 
 ![luminosity](ans/luminosity.png)
-# 9. Color Balance Operation:
-## Concept: Linear Transformation
+## 9. Color Balance Operation:
+### Concept: Linear Transformation
 **Explanation**: The color_balance operation applies a linear transformation to each pixel of the image. It multiplies the RGB values of each pixel by the specified color balance factors and clips the result to the valid range. This operation is a linear transformation in linear algebra.
-### matrix:
+#### matrix:
 \begin{bmatrix}
 red scale & green scale & blue scale \\
 \end{bmatrix}
