@@ -109,3 +109,19 @@ red scale & green scale & blue scale \\
 ## 10. comprassion:
 **Explanation**: This is achieved by dividing the pixel values of the image by 4 and then multiplying them by 4, effectively reducing the color depth to a quarter of its original value. This method is a simple form of quantization, which can significantly reduce the file size of an image at the cost of some loss in image quality.
 ![compress](ans/compress.png)
+
+# Part2: Eigen seyed
+This Python class, Eigen, calculates the eigenvalues and eigenvectors of a given square matrix. It supports matrices of size 2x2 and 3x3. The class also includes methods for plotting the eigenvalues and eigenvectors and for diagonalizing the matrix.
+
+example:
+\begin{bmatrix} 
+6 & 5 \ 32 & 4 
+\end{bmatrix}
+
+![eigen vectors](ans/eigen2_2.png)
+# Part3: projected seyed
+This Python script provides a simple tool for visualizing the projection of one vector onto another using matplotlib. It includes two main functions: project for calculating the projection of a vector b onto another vector a, and plot for visualizing the vectors and their projection.
+
+example: projecting b=`[4,1]` on a=`[5,0]`
+
+![projection](ans/projection.png)
