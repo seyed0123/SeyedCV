@@ -2,6 +2,7 @@
 
 this repository contains some of my linear algebra projects that i gather them here.
 
+<img src='photo11070431380.jpg' width='40%'>
 
 # part 1: SeyedCV
 seyedCV is a class that edits images using linear algebra methods.
