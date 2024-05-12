@@ -14,10 +14,12 @@ here is it's functionality:
 **Explanation**: The resize operation rescales the image by applying a scaling transformation. It achieves this by creating a grid of coordinates in the output image and applying the inverse transformation to these coordinates. The coordinates are divided by the scaling factors, resulting in a rescaled image. The rounding of coordinates ensures that the nearest pixel in the input image is obtained.
 #### matrix:
 
+$$
 \begin{bmatrix}
 sx & 0 \\
 0 & sy \\
 \end{bmatrix}
+$$
 
 ![resize12](ans/resize12.png)
 ![resize21](ans/resize21.png)
