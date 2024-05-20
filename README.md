@@ -13,35 +13,34 @@ here is it's functionality:
 ### Concept: Scaling Transformation
 **Explanation**: The resize operation rescales the image by applying a scaling transformation. It achieves this by creating a grid of coordinates in the output image and applying the inverse transformation to these coordinates. The coordinates are divided by the scaling factors, resulting in a rescaled image. The rounding of coordinates ensures that the nearest pixel in the input image is obtained.
 #### matrix:
-
+$
 \begin{bmatrix}
 sx & 0 \\
 0 & sy \\
 \end{bmatrix}
-
+$
 ![resize12](ans/resize12.png)
 ![resize21](ans/resize21.png)
 ## 2. Rotate Operation:
 ### Concept: Rotation Transformation
 **Explanation**: The rotate operation rotates the image by applying a rotation transformation. It begins by converting the rotation angle to radians. A grid of coordinates is then created in the output image. The coordinates are centered by subtracting the width and height of the image by 2. The inverse rotation transformation is applied to these coordinates using trigonometric functions. The shifted and rounded coordinates are then used to index the input image, resulting in a rotated image.
 #### matrix:
-
 \begin{bmatrix}
 cos($\theta$) & -sin($\theta$) \\
 sin($\theta$) & cos($\theta$) \\
 \end{bmatrix}
-
 ![rotated image](ans/rotate.png)
 ## 3. Sobel Filter Operation:
 ### Concept: Convolution
 **Explanation**: The sobel_filter operation applies a convolution operation to the image using a specific filter. Convolution involves element-wise multiplication of the filter and the image, followed by summing the results. This operation is a linear transformation in linear algebra. The sobel_filter operation utilizes a 3x3 filter matrix to detect edges in the image.
 #### matrix:
+$
 \begin{bmatrix}
 -1 & -2 & -1 \\
 0 & 0 & 0 \\
 1 & 2 & 0 \\
 \end{bmatrix}
-
+$
 ![sobel filter](ans/sobel.png)
 ## 4. Prewitt Filter Operation:
 ### Concept: Convolution
@@ -115,10 +114,11 @@ red scale & green scale & blue scale \\
 This Python class, Eigen, calculates the eigenvalues and eigenvectors of a given square matrix. It supports matrices of size 2x2 and 3x3. The class also includes methods for plotting the eigenvalues and eigenvectors and for diagonalizing the matrix.
 
 example:
+$
 \begin{bmatrix} 
 6 & 5 \ 32 & 4 
 \end{bmatrix}
-
+$
 ![eigen vectors](ans/eigen2_2.png)
 # Part3: projected seyed
 This Python script provides a simple tool for visualizing the projection of one vector onto another using matplotlib. It includes two main functions: project for calculating the projection of a vector b onto another vector a, and plot for visualizing the vectors and their projection.
